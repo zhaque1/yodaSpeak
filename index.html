@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+      <title>Talk Like Yoda </title>
+      <link rel="stylesheet" href="style.css">
+      <script src="jquery-3.2.1.js"></script>
+
+      <script>
+
+        window.onload = function(){
+
+              $('#btnTranslate').on('click', translateText );
+
+        }
+
+        function translateText(){
+
+          var textToTranslate = $("#textToTranslate").val();
+                      var url = "https://yoda.p.mashape.com/yoda?sentence=" + textToTranslate;
+                      $.ajax({url: url, headers: {"X-Mashape-Key":"aYqGUVGsPPmshwj5bIkD27mBSM3zp1CfyKdjsnOtSyepR6Q2cB"}, sucess: function(result){ $("#result").html(result);}});
+
+        }
+
+      </script>
+  </head>
+  <body>
+
+      <h1>Talk Like Yoda App... </h1>
+
+      <div id="translator">
+
+          <label for="textToTranslate">Text to Translate
+          </label><br />
+            <textarea id="textToTranslate"></textarea><br />
+
+            <button id="btnTranslate">Translate To YodaSpeak </button>
+
+              <div id="result"></div>
+
+
+        </div>
+
+    </body>
+
+</html>

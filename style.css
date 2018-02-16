@@ -1,0 +1,52 @@
+body{
+
+  background-color: lightblue;
+
+}
+
+h1{
+
+  font-family: Arial;
+
+}
+
+textarea{
+
+  width: 400px;
+  height: 100px;
+  background: #eeeeee
+
+
+}
+
+label {
+
+  font-family: Arial, Verdana, sans-serif;
+
+}
+
+button{
+
+width: 400px;
+background-color: bisque;
+font-weight: bold;
+
+}
+
+#translator{
+
+  border: 1px solid black;
+  padding: 10px;
+background-color: #00aa00;
+width: 420px;
+
+}
+
+#result{
+
+  margin-top: 20px;
+  border: 1px solid black;
+  background-color: white;
+  height: 50px;
+  
+}
